@@ -11,7 +11,7 @@ namespace fibonaci
         static void Main(string[] args)
         {
             int[] numeros = { 0, 1, 1};
-            Console.WriteLine(numeros[0]+", ");
+            Console.Write(numeros[0]+", ");
             while (true) {
                 
                 numeros[2] = numeros[0]+numeros[1];
@@ -19,7 +19,9 @@ namespace fibonaci
                 numeros[0]=numeros[1];
                 numeros[1]=numeros[2];
                 Console.Write(numeros[0]+", ");
-                
+                System.Threading.Thread.Sleep(500);
+
+
             }
 
         }
